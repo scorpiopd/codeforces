@@ -1,0 +1,8 @@
+def coins(k, r):
+    for i in range(1, 11):
+        if (i * k) % 10 == 0 or (i * k) % 10 == r:
+            break
+
+    return i
+
+print(coins(2,1))
