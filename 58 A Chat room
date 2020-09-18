@@ -1,0 +1,34 @@
++++++++++++++++++++++++++++++++
+solution 1
++++++++++++++++++++++++++++++++
+
+s = input()
+t = "hello"
+k=0
+for i in s:
+    if(i == t[k]):
+        k+=1
+    if(k==5):
+        break
+if(k==5):
+    print("YES")
+else:
+    print("NO")
+
+
+
+
+
++++++++++++++++++++++++++++++++
+solution 2
++++++++++++++++++++++++++++++++
+
+
+import re 
+p = re.compile(".*[h]+.*[e]+.*[l]+.*[l]+.*[o]+.*")
+s = input()
+m = p.search(s)
+if (m == None):
+    print("NO")
+else:
+    print("YES")
